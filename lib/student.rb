@@ -19,12 +19,16 @@ class Student
   end
 
   def add_student_attributes(attributes_hash)
-    @name = attributes_hash[]
-    @location = attributes_hash[]
-    @twitter = attributes_hash[]
-    @linkedin = attributes_hash[]
-    @github = attributes_hash[]
-    @blog = attributes_hash[]
+    @name = attributes_hash[:name]
+    @location = attributes_hash[:location]
+    @twitter = attributes_hash[:twitter]
+    @linkedin = attributes_hash[:linkedin]
+    @github = attributes_hash[:github]
+    @blog = attributes_hash[:blog]
+    @profile_quote = attributes_hash[:profile_quote]
+    @bio = attributes_hash[:bio]
+    @profile_url = attributes_hash[:profile_url]
+
   end
 
   def self.all
